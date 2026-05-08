@@ -1,0 +1,32 @@
+# ── Core data stack ──────────────────────────────────────────
+pandas==2.2.2
+numpy==1.26.4
+scipy==1.13.0
+
+# ── ML & pipelines ───────────────────────────────────────────
+scikit-learn==1.4.2
+xgboost==2.0.3
+lightgbm==4.3.0
+imbalanced-learn==0.12.2     # SMOTE for class imbalance
+
+# ── Experiment tracking & model persistence ──────────────────
+mlflow==2.12.1
+joblib==1.4.0
+
+# ── Visualization ────────────────────────────────────────────
+matplotlib==3.8.4
+seaborn==0.13.2
+plotly==5.21.0
+
+# ── EDA helper ───────────────────────────────────────────────
+ydata-profiling==4.7.0
+
+# ── Deployment ───────────────────────────────────────────────
+streamlit==1.33.0
+flask==3.0.3
+flask-cors==4.0.0
+
+# ── Utilities ────────────────────────────────────────────────
+python-dotenv==1.0.1
+pyyaml==6.0.1
+loguru==0.7.2

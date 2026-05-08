@@ -1,0 +1,102 @@
+# config.yaml  — centralised project configuration
+# All paths, model params, and clinical constants live here.
+# Reference this from every module via src/utils/config.py
+
+# ── Paths ─────────────────────────────────────────────────────
+paths:
+  raw_data:        "data/raw/whonet_export.csv"
+  processed_data:  "data/processed/amr_clean.csv"
+  train_data:      "data/processed/train.csv"
+  val_data:        "data/processed/val.csv"
+  test_data:       "data/processed/test.csv"
+  model_dir:       "data/models/"
+  mlflow_uri:      "mlruns/"
+
+# ── Target variable ───────────────────────────────────────────
+# AMR outcome is binary: Resistant (1) vs Susceptible/Intermediate (0)
+target: "resistant"
+
+# ── Clinical feature groups ───────────────────────────────────
+features:
+  demographic:
+    - age_years
+    - sex
+    - ward_type           # ICU / General / Outpatient / Maternity
+    - admission_type      # Emergency / Elective / Transfer
+    - county
+
+  microbiological:
+    - organism            # e.g. E. coli, Klebsiella pneumoniae, S. aureus
+    - specimen_type       # Blood / Urine / Sputum / Wound / CSF
+    - culture_method      # Disk diffusion / MIC broth dilution
+    - antibiotic          # The drug being tested
+
+  clinical_history:
+    - prior_antibiotic_90d      # Any antibiotic in prior 90 days (bool)
+    - prior_antibiotic_class    # Class of last antibiotic (if any)
+    - prior_hospitalisation_1y  # Hospitalised in prior 12 months (bool)
+    - hiv_status                # HIV positive (bool) — major AMR risk factor
+    - diabetes                  # Diabetes (bool)
+    - catheter_present          # Urinary/IV catheter (bool)
+
+  temporal:
+    - month                     # Seasonality
+    - year
+    - quarter
+
+# ── Drug-organism priority pairs (East Africa focus) ─────────
+priority_pairs:
+  - organism: "Escherichia coli"
+    drugs: ["ampicillin", "ciprofloxacin", "ceftriaxone", "meropenem", "cotrimoxazole"]
+  - organism: "Klebsiella pneumoniae"
+    drugs: ["ceftriaxone", "meropenem", "gentamicin", "amikacin"]
+  - organism: "Staphylococcus aureus"
+    drugs: ["oxacillin", "clindamycin", "vancomycin"]     # MRSA detection
+  - organism: "Salmonella typhi"
+    drugs: ["ciprofloxacin", "azithromycin", "ceftriaxone"]
+  - organism: "Mycobacterium tuberculosis"
+    drugs: ["isoniazid", "rifampicin", "ethambutol"]       # TB-AMR
+
+# ── Preprocessing ─────────────────────────────────────────────
+preprocessing:
+  test_size:        0.15
+  val_size:         0.15
+  random_state:     42
+  stratify_by:      ["organism", "resistant"]
+  min_isolates:     30   # Drop organism-drug combos with fewer records
+
+# ── Models ────────────────────────────────────────────────────
+models:
+  xgboost:
+    n_estimators: 400
+    max_depth: 6
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    scale_pos_weight: "auto"   # Computed from class ratio at runtime
+    eval_metric: "auc"
+    early_stopping_rounds: 30
+
+  lightgbm:
+    n_estimators: 400
+    num_leaves: 63
+    learning_rate: 0.05
+    min_child_samples: 20
+    class_weight: "balanced"
+
+  logistic_regression:          # Interpretable baseline
+    C: 1.0
+    max_iter: 1000
+    class_weight: "balanced"
+
+  random_forest:
+    n_estimators: 300
+    max_depth: 10
+    class_weight: "balanced"
+
+# ── Evaluation thresholds ─────────────────────────────────────
+evaluation:
+  # Clinical target: AUROC > 0.80, sensitivity > 0.85 for resistant class
+  auroc_target:        0.80
+  sensitivity_target:  0.85
+  decision_threshold:  0.50   # Adjustable at deployment time
