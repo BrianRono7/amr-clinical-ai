@@ -1,0 +1,244 @@
+2026-05-08 12:38:49.929 | INFO     | __main__:run:65 - No real data path provided — generating 8,000 synthetic isolates for development
+2026-05-08 12:38:49.930 | INFO     | src.data.load_data:generate_synthetic_whonet:115 - Generating 8,000 synthetic isolates (seed=42)
+2026-05-08 12:38:50.349 | SUCCESS  | src.data.load_data:generate_synthetic_whonet:215 - Generated 26,181 isolate-antibiotic records from 8,000 isolates
+2026-05-08 12:38:50.351 | INFO     | __main__:run:69 - Raw data shape: (26181, 17)
+2026-05-08 12:38:50.354 | INFO     | src.data.clean_data:clean:61 - Starting cleaning — input shape: (26181, 17)
+2026-05-08 12:38:50.397 | DEBUG    | src.data.clean_data:_standardise_columns:106 - Columns standardised
+2026-05-08 12:38:50.435 | DEBUG    | src.data.clean_data:_parse_dates:131 - Date range: 2019-01-01 → 2023-12-30
+2026-05-08 12:38:50.476 | INFO     | src.data.clean_data:_remove_duplicates:167 - Removed 0 duplicate records
+2026-05-08 12:46:27.150 | INFO     | __main__:run:65 - No real data path provided — generating 8,000 synthetic isolates for development
+2026-05-08 12:46:27.152 | INFO     | src.data.load_data:generate_synthetic_whonet:115 - Generating 8,000 synthetic isolates (seed=42)
+2026-05-08 12:46:27.553 | SUCCESS  | src.data.load_data:generate_synthetic_whonet:215 - Generated 26,181 isolate-antibiotic records from 8,000 isolates
+2026-05-08 12:46:27.555 | INFO     | __main__:run:69 - Raw data shape: (26181, 17)
+2026-05-08 12:46:27.560 | INFO     | src.data.clean_data:clean:61 - Starting cleaning — input shape: (26181, 17)
+2026-05-08 12:46:27.603 | DEBUG    | src.data.clean_data:_standardise_columns:106 - Columns standardised
+2026-05-08 12:46:27.640 | DEBUG    | src.data.clean_data:_parse_dates:131 - Date range: 2019-01-01 → 2023-12-30
+2026-05-08 12:46:27.674 | INFO     | src.data.clean_data:_remove_duplicates:167 - Removed 0 duplicate records
+2026-05-08 12:46:27.709 | INFO     | src.data.clean_data:_filter_rare_combos:245 - Removed 0 records from 0 rare organism-drug combos (< 30 isolates)
+2026-05-08 12:46:27.711 | INFO     | src.data.clean_data:_filter_rare_combos:251 - Retained 15 organism-drug combinations
+2026-05-08 12:46:27.715 | INFO     | src.data.clean_data:_create_target:266 - Overall resistance rate: 44.1% (11,538 resistant / 26,181 total)
+2026-05-08 12:46:27.717 | SUCCESS  | src.data.clean_data:clean:73 - Cleaning complete — 26,181 records remain (0 removed, 0.0% drop rate)
+2026-05-08 12:46:27.830 | INFO     | __main__:run:79 - Saved cleaned data → data/processed/amr_clean.csv
+2026-05-08 12:46:45.383 | INFO     | src.data.eda:run_full_eda:291 - Starting full EDA ...
+2026-05-08 12:46:47.175 | INFO     | src.data.eda:plot_resistance_rates:92 - Saved resistance_rates.png
+2026-05-08 12:53:13.935 | INFO     | __main__:run:65 - No real data path provided — generating 8,000 synthetic isolates for development
+2026-05-08 12:53:13.935 | INFO     | src.data.load_data:generate_synthetic_whonet:115 - Generating 8,000 synthetic isolates (seed=42)
+2026-05-08 12:53:14.292 | SUCCESS  | src.data.load_data:generate_synthetic_whonet:215 - Generated 26,181 isolate-antibiotic records from 8,000 isolates
+2026-05-08 12:53:14.294 | INFO     | __main__:run:69 - Raw data shape: (26181, 17)
+2026-05-08 12:53:14.295 | INFO     | src.data.clean_data:clean:61 - Starting cleaning — input shape: (26181, 17)
+2026-05-08 12:53:14.330 | DEBUG    | src.data.clean_data:_standardise_columns:106 - Columns standardised
+2026-05-08 12:53:14.361 | DEBUG    | src.data.clean_data:_parse_dates:131 - Date range: 2019-01-01 → 2023-12-30
+2026-05-08 12:53:14.394 | INFO     | src.data.clean_data:_remove_duplicates:167 - Removed 0 duplicate records
+2026-05-08 12:53:14.432 | INFO     | src.data.clean_data:_filter_rare_combos:245 - Removed 0 records from 0 rare organism-drug combos (< 30 isolates)
+2026-05-08 12:53:14.435 | INFO     | src.data.clean_data:_filter_rare_combos:251 - Retained 15 organism-drug combinations
+2026-05-08 12:53:14.441 | INFO     | src.data.clean_data:_create_target:266 - Overall resistance rate: 44.1% (11,538 resistant / 26,181 total)
+2026-05-08 12:53:14.442 | SUCCESS  | src.data.clean_data:clean:73 - Cleaning complete — 26,181 records remain (0 removed, 0.0% drop rate)
+2026-05-08 12:53:14.563 | INFO     | __main__:run:79 - Saved cleaned data → data/processed/amr_clean.csv
+2026-05-08 12:53:15.574 | INFO     | src.data.eda:run_full_eda:291 - Starting full EDA ...
+2026-05-08 12:53:16.499 | INFO     | src.data.eda:plot_resistance_rates:92 - Saved resistance_rates.png
+2026-05-08 13:19:21.160 | INFO     | __main__:run:65 - No real data path provided — generating 8,000 synthetic isolates for development
+2026-05-08 13:19:21.161 | INFO     | src.data.load_data:generate_synthetic_whonet:115 - Generating 8,000 synthetic isolates (seed=42)
+2026-05-08 13:19:21.528 | SUCCESS  | src.data.load_data:generate_synthetic_whonet:215 - Generated 26,181 isolate-antibiotic records from 8,000 isolates
+2026-05-08 13:19:21.530 | INFO     | __main__:run:69 - Raw data shape: (26181, 17)
+2026-05-08 13:19:21.531 | INFO     | src.data.clean_data:clean:61 - Starting cleaning — input shape: (26181, 17)
+2026-05-08 13:19:21.566 | DEBUG    | src.data.clean_data:_standardise_columns:106 - Columns standardised
+2026-05-08 13:19:21.583 | DEBUG    | src.data.clean_data:_parse_dates:131 - Date range: 2019-01-01 → 2023-12-30
+2026-05-08 13:19:21.616 | INFO     | src.data.clean_data:_remove_duplicates:167 - Removed 0 duplicate records
+2026-05-08 13:19:21.651 | INFO     | src.data.clean_data:_filter_rare_combos:245 - Removed 0 records from 0 rare organism-drug combos (< 30 isolates)
+2026-05-08 13:19:21.654 | INFO     | src.data.clean_data:_filter_rare_combos:251 - Retained 15 organism-drug combinations
+2026-05-08 13:19:21.658 | INFO     | src.data.clean_data:_create_target:266 - Overall resistance rate: 44.1% (11,538 resistant / 26,181 total)
+2026-05-08 13:19:21.659 | SUCCESS  | src.data.clean_data:clean:73 - Cleaning complete — 26,181 records remain (0 removed, 0.0% drop rate)
+2026-05-08 13:19:21.773 | INFO     | __main__:run:79 - Saved cleaned data → data/processed/amr_clean.csv
+2026-05-08 13:19:22.857 | INFO     | src.data.eda:run_full_eda:291 - Starting full EDA ...
+2026-05-08 13:19:24.033 | INFO     | src.data.eda:plot_resistance_rates:92 - Saved resistance_rates.png
+2026-05-08 13:23:31.509 | INFO     | __main__:run:65 - No real data path provided — generating 8,000 synthetic isolates for development
+2026-05-08 13:23:31.510 | INFO     | src.data.load_data:generate_synthetic_whonet:115 - Generating 8,000 synthetic isolates (seed=42)
+2026-05-08 13:23:31.908 | SUCCESS  | src.data.load_data:generate_synthetic_whonet:215 - Generated 26,181 isolate-antibiotic records from 8,000 isolates
+2026-05-08 13:23:31.910 | INFO     | __main__:run:69 - Raw data shape: (26181, 17)
+2026-05-08 13:23:31.911 | INFO     | src.data.clean_data:clean:61 - Starting cleaning — input shape: (26181, 17)
+2026-05-08 13:23:31.956 | DEBUG    | src.data.clean_data:_standardise_columns:106 - Columns standardised
+2026-05-08 13:23:31.983 | DEBUG    | src.data.clean_data:_parse_dates:131 - Date range: 2019-01-01 → 2023-12-30
+2026-05-08 13:23:32.019 | INFO     | src.data.clean_data:_remove_duplicates:167 - Removed 0 duplicate records
+2026-05-08 13:23:32.061 | INFO     | src.data.clean_data:_filter_rare_combos:245 - Removed 0 records from 0 rare organism-drug combos (< 30 isolates)
+2026-05-08 13:23:32.064 | INFO     | src.data.clean_data:_filter_rare_combos:251 - Retained 15 organism-drug combinations
+2026-05-08 13:23:32.069 | INFO     | src.data.clean_data:_create_target:266 - Overall resistance rate: 44.1% (11,538 resistant / 26,181 total)
+2026-05-08 13:23:32.070 | SUCCESS  | src.data.clean_data:clean:73 - Cleaning complete — 26,181 records remain (0 removed, 0.0% drop rate)
+2026-05-08 13:23:32.207 | INFO     | __main__:run:79 - Saved cleaned data → data/processed/amr_clean.csv
+2026-05-08 13:23:33.816 | INFO     | src.data.eda:run_full_eda:291 - Starting full EDA ...
+2026-05-08 13:23:35.044 | INFO     | src.data.eda:plot_resistance_rates:92 - Saved resistance_rates.png
+2026-05-08 13:25:50.001 | SUCCESS  | src.data.eda:run_full_eda:299 - EDA complete — plots saved to data/eda_plots/
+2026-05-08 13:25:51.619 | INFO     | src.features.feature_engineering:engineer_features:79 - Engineering features ...
+2026-05-08 13:25:51.699 | SUCCESS  | src.features.feature_engineering:engineer_features:89 - Feature engineering complete — 31 columns
+2026-05-08 13:25:51.700 | INFO     | __main__:run:93 - Feature matrix shape: (26181, 31)
+2026-05-08 13:25:51.700 | INFO     | __main__:run:96 - New features added (8): ['drug_class', 'hospital_org_resistance_rate', 'is_mdr', 'month_cos', 'month_sin', 'n_resistant_classes', 'specimen_risk', 'ward_org_drug_resistance_rate']
+2026-05-08 13:25:54.714 | INFO     | __main__:run:111 - Using ISOLATE-LEVEL stratified split
+2026-05-08 13:25:55.096 | SUCCESS  | src.data.split_data:save_splits:218 - Splits saved to data/processed/
+2026-05-08 13:26:05.041 | INFO     | src.models.train:train_model:199 - 
+=======================================================
+2026-05-08 13:26:05.042 | INFO     | src.models.train:train_model:200 - Training: LOGISTIC_REGRESSION
+2026-05-08 13:26:05.042 | INFO     | src.models.train:train_model:201 - =======================================================
+2026-05-08 13:26:06.957 | INFO     | src.models.train:train_model:246 -   val_auroc             : 0.9135
+2026-05-08 13:26:06.963 | INFO     | src.models.train:train_model:246 -   val_auprc             : 0.8983
+2026-05-08 13:26:06.965 | INFO     | src.models.train:train_model:246 -   val_f1                : 0.8095
+2026-05-08 13:26:06.965 | INFO     | src.models.train:train_model:246 -   val_recall            : 0.8261
+2026-05-08 13:26:06.966 | INFO     | src.models.train:train_model:246 -   val_specificity       : 0.8348
+2026-05-08 13:26:10.376 | INFO     | src.models.train:tune_threshold:300 - Optimal threshold: 0.44 (specificity=0.812 at sensitivity≥85%)
+2026-05-08 13:26:10.381 | INFO     | src.models.train:train_all:349 - Saved logistic_regression → data/models/logistic_regression_pipeline.joblib
+2026-05-08 13:26:10.381 | INFO     | src.models.train:train_model:199 - 
+=======================================================
+2026-05-08 13:26:10.381 | INFO     | src.models.train:train_model:200 - Training: RANDOM_FOREST
+2026-05-08 13:26:10.381 | INFO     | src.models.train:train_model:201 - =======================================================
+2026-05-08 13:26:11.630 | INFO     | src.models.train:train_model:246 -   val_auroc             : 0.9755
+2026-05-08 13:26:11.632 | INFO     | src.models.train:train_model:246 -   val_auprc             : 0.9710
+2026-05-08 13:26:11.633 | INFO     | src.models.train:train_model:246 -   val_f1                : 0.8917
+2026-05-08 13:26:11.633 | INFO     | src.models.train:train_model:246 -   val_recall            : 0.8970
+2026-05-08 13:26:11.634 | INFO     | src.models.train:train_model:246 -   val_specificity       : 0.9118
+2026-05-08 13:26:13.977 | INFO     | src.models.train:tune_threshold:300 - Optimal threshold: 0.58 (specificity=0.956 at sensitivity≥85%)
+2026-05-08 13:26:14.034 | INFO     | src.models.train:train_all:349 - Saved random_forest → data/models/random_forest_pipeline.joblib
+2026-05-08 13:26:14.035 | INFO     | src.models.train:train_model:199 - 
+=======================================================
+2026-05-08 13:26:14.035 | INFO     | src.models.train:train_model:200 - Training: XGBOOST
+2026-05-08 13:26:14.035 | INFO     | src.models.train:train_model:201 - =======================================================
+2026-05-08 13:26:16.108 | INFO     | src.models.train:train_model:246 -   val_auroc             : 1.0000
+2026-05-08 13:26:16.109 | INFO     | src.models.train:train_model:246 -   val_auprc             : 1.0000
+2026-05-08 13:26:16.110 | INFO     | src.models.train:train_model:246 -   val_f1                : 1.0000
+2026-05-08 13:26:16.111 | INFO     | src.models.train:train_model:246 -   val_recall            : 1.0000
+2026-05-08 13:26:16.112 | INFO     | src.models.train:train_model:246 -   val_specificity       : 1.0000
+2026-05-08 13:26:18.856 | INFO     | src.models.train:tune_threshold:300 - Optimal threshold: 0.10 (specificity=1.000 at sensitivity≥85%)
+2026-05-08 13:26:18.863 | INFO     | src.models.train:train_all:349 - Saved xgboost → data/models/xgboost_pipeline.joblib
+2026-05-08 13:26:18.864 | INFO     | src.models.train:train_model:199 - 
+=======================================================
+2026-05-08 13:26:18.864 | INFO     | src.models.train:train_model:200 - Training: LIGHTGBM
+2026-05-08 13:26:18.864 | INFO     | src.models.train:train_model:201 - =======================================================
+2026-05-08 13:26:23.271 | INFO     | src.models.train:train_model:246 -   val_auroc             : 1.0000
+2026-05-08 13:26:23.280 | INFO     | src.models.train:train_model:246 -   val_auprc             : 1.0000
+2026-05-08 13:26:23.281 | INFO     | src.models.train:train_model:246 -   val_f1                : 1.0000
+2026-05-08 13:26:23.282 | INFO     | src.models.train:train_model:246 -   val_recall            : 1.0000
+2026-05-08 13:26:23.282 | INFO     | src.models.train:train_model:246 -   val_specificity       : 1.0000
+2026-05-08 13:26:26.079 | INFO     | src.models.train:tune_threshold:300 - Optimal threshold: 0.10 (specificity=1.000 at sensitivity≥85%)
+2026-05-08 13:26:26.105 | INFO     | src.models.train:train_all:349 - Saved lightgbm → data/models/lightgbm_pipeline.joblib
+2026-05-08 13:26:26.120 | SUCCESS  | src.models.train:train_all:363 - Best model: xgboost (AUROC=1.0000)
+2026-05-08 13:26:26.121 | SUCCESS  | src.models.train:train_all:364 - Saved best model → data/models/best_model.joblib
+2026-05-08 13:26:26.126 | SUCCESS  | __main__:run:126 - All models trained and saved to data/models/
+2026-05-08 13:26:26.126 | INFO     | __main__:run:131 -   logistic_regression       AUROC=0.9135  Recall=0.8261  Threshold=0.44
+2026-05-08 13:26:26.126 | INFO     | __main__:run:131 -   random_forest             AUROC=0.9755  Recall=0.8970  Threshold=0.58
+2026-05-08 13:26:26.126 | INFO     | __main__:run:131 -   xgboost                   AUROC=1.0000  Recall=1.0000  Threshold=0.10
+2026-05-08 13:26:26.126 | INFO     | __main__:run:131 -   lightgbm                  AUROC=1.0000  Recall=1.0000  Threshold=0.10
+2026-05-08 13:35:25.754 | INFO     | __main__:run:65 - No real data path provided — generating 8,000 synthetic isolates for development
+2026-05-08 13:35:25.754 | INFO     | src.data.load_data:generate_synthetic_whonet:115 - Generating 8,000 synthetic isolates (seed=42)
+2026-05-08 13:35:26.167 | SUCCESS  | src.data.load_data:generate_synthetic_whonet:215 - Generated 26,181 isolate-antibiotic records from 8,000 isolates
+2026-05-08 13:35:26.169 | INFO     | __main__:run:69 - Raw data shape: (26181, 17)
+2026-05-08 13:35:26.171 | INFO     | src.data.clean_data:clean:61 - Starting cleaning — input shape: (26181, 17)
+2026-05-08 13:35:26.238 | DEBUG    | src.data.clean_data:_standardise_columns:106 - Columns standardised
+2026-05-08 13:35:26.277 | DEBUG    | src.data.clean_data:_parse_dates:131 - Date range: 2019-01-01 → 2023-12-30
+2026-05-08 13:35:26.315 | INFO     | src.data.clean_data:_remove_duplicates:167 - Removed 0 duplicate records
+2026-05-08 13:35:26.357 | INFO     | src.data.clean_data:_filter_rare_combos:245 - Removed 0 records from 0 rare organism-drug combos (< 30 isolates)
+2026-05-08 13:35:26.361 | INFO     | src.data.clean_data:_filter_rare_combos:251 - Retained 15 organism-drug combinations
+2026-05-08 13:35:26.365 | INFO     | src.data.clean_data:_create_target:266 - Overall resistance rate: 44.1% (11,538 resistant / 26,181 total)
+2026-05-08 13:35:26.366 | SUCCESS  | src.data.clean_data:clean:73 - Cleaning complete — 26,181 records remain (0 removed, 0.0% drop rate)
+2026-05-08 13:35:26.488 | INFO     | __main__:run:79 - Saved cleaned data → data/processed/amr_clean.csv
+2026-05-08 13:35:27.539 | INFO     | src.data.eda:run_full_eda:291 - Starting full EDA ...
+2026-05-08 13:35:28.603 | INFO     | src.data.eda:plot_resistance_rates:92 - Saved resistance_rates.png
+2026-05-08 13:36:06.414 | SUCCESS  | src.data.eda:run_full_eda:299 - EDA complete — plots saved to data/eda_plots/
+2026-05-08 13:36:06.705 | INFO     | src.features.feature_engineering:engineer_features:79 - Engineering features ...
+2026-05-08 13:36:06.785 | SUCCESS  | src.features.feature_engineering:engineer_features:89 - Feature engineering complete — 31 columns
+2026-05-08 13:36:06.785 | INFO     | __main__:run:93 - Feature matrix shape: (26181, 31)
+2026-05-08 13:36:06.785 | INFO     | __main__:run:96 - New features added (8): ['drug_class', 'hospital_org_resistance_rate', 'is_mdr', 'month_cos', 'month_sin', 'n_resistant_classes', 'specimen_risk', 'ward_org_drug_resistance_rate']
+2026-05-08 13:36:07.148 | INFO     | __main__:run:111 - Using ISOLATE-LEVEL stratified split
+2026-05-08 13:36:07.579 | SUCCESS  | src.data.split_data:save_splits:218 - Splits saved to data/processed/
+2026-05-08 13:36:08.584 | INFO     | src.models.train:train_model:199 - 
+=======================================================
+2026-05-08 13:36:08.584 | INFO     | src.models.train:train_model:200 - Training: LOGISTIC_REGRESSION
+2026-05-08 13:36:08.584 | INFO     | src.models.train:train_model:201 - =======================================================
+2026-05-08 13:36:09.800 | INFO     | src.models.train:train_model:246 -   val_auroc             : 0.9135
+2026-05-08 13:36:09.804 | INFO     | src.models.train:train_model:246 -   val_auprc             : 0.8983
+2026-05-08 13:36:09.805 | INFO     | src.models.train:train_model:246 -   val_f1                : 0.8095
+2026-05-08 13:36:09.806 | INFO     | src.models.train:train_model:246 -   val_recall            : 0.8261
+2026-05-08 13:36:09.807 | INFO     | src.models.train:train_model:246 -   val_specificity       : 0.8348
+2026-05-08 13:36:14.375 | INFO     | src.models.train:tune_threshold:300 - Optimal threshold: 0.44 (specificity=0.812 at sensitivity≥85%)
+2026-05-08 13:36:14.383 | INFO     | src.models.train:train_all:349 - Saved logistic_regression → data/models/logistic_regression_pipeline.joblib
+2026-05-08 13:36:14.383 | INFO     | src.models.train:train_model:199 - 
+=======================================================
+2026-05-08 13:36:14.383 | INFO     | src.models.train:train_model:200 - Training: RANDOM_FOREST
+2026-05-08 13:36:14.383 | INFO     | src.models.train:train_model:201 - =======================================================
+2026-05-08 13:36:15.580 | INFO     | src.models.train:train_model:246 -   val_auroc             : 0.9755
+2026-05-08 13:36:15.582 | INFO     | src.models.train:train_model:246 -   val_auprc             : 0.9710
+2026-05-08 13:36:15.583 | INFO     | src.models.train:train_model:246 -   val_f1                : 0.8917
+2026-05-08 13:36:15.583 | INFO     | src.models.train:train_model:246 -   val_recall            : 0.8970
+2026-05-08 13:36:15.584 | INFO     | src.models.train:train_model:246 -   val_specificity       : 0.9118
+2026-05-08 13:36:17.953 | INFO     | src.models.train:tune_threshold:300 - Optimal threshold: 0.58 (specificity=0.956 at sensitivity≥85%)
+2026-05-08 13:36:17.999 | INFO     | src.models.train:train_all:349 - Saved random_forest → data/models/random_forest_pipeline.joblib
+2026-05-08 13:36:17.999 | INFO     | src.models.train:train_model:199 - 
+=======================================================
+2026-05-08 13:36:17.999 | INFO     | src.models.train:train_model:200 - Training: XGBOOST
+2026-05-08 13:36:17.999 | INFO     | src.models.train:train_model:201 - =======================================================
+2026-05-08 13:36:20.293 | INFO     | src.models.train:train_model:246 -   val_auroc             : 1.0000
+2026-05-08 13:36:20.296 | INFO     | src.models.train:train_model:246 -   val_auprc             : 1.0000
+2026-05-08 13:36:20.297 | INFO     | src.models.train:train_model:246 -   val_f1                : 1.0000
+2026-05-08 13:36:20.298 | INFO     | src.models.train:train_model:246 -   val_recall            : 1.0000
+2026-05-08 13:36:20.299 | INFO     | src.models.train:train_model:246 -   val_specificity       : 1.0000
+2026-05-08 13:36:23.075 | INFO     | src.models.train:tune_threshold:300 - Optimal threshold: 0.10 (specificity=1.000 at sensitivity≥85%)
+2026-05-08 13:36:23.083 | INFO     | src.models.train:train_all:349 - Saved xgboost → data/models/xgboost_pipeline.joblib
+2026-05-08 13:36:23.083 | INFO     | src.models.train:train_model:199 - 
+=======================================================
+2026-05-08 13:36:23.084 | INFO     | src.models.train:train_model:200 - Training: LIGHTGBM
+2026-05-08 13:36:23.084 | INFO     | src.models.train:train_model:201 - =======================================================
+2026-05-08 13:36:27.275 | INFO     | src.models.train:train_model:246 -   val_auroc             : 1.0000
+2026-05-08 13:36:27.278 | INFO     | src.models.train:train_model:246 -   val_auprc             : 1.0000
+2026-05-08 13:36:27.278 | INFO     | src.models.train:train_model:246 -   val_f1                : 1.0000
+2026-05-08 13:36:27.279 | INFO     | src.models.train:train_model:246 -   val_recall            : 1.0000
+2026-05-08 13:36:27.279 | INFO     | src.models.train:train_model:246 -   val_specificity       : 1.0000
+2026-05-08 13:36:29.930 | INFO     | src.models.train:tune_threshold:300 - Optimal threshold: 0.10 (specificity=1.000 at sensitivity≥85%)
+2026-05-08 13:36:29.958 | INFO     | src.models.train:train_all:349 - Saved lightgbm → data/models/lightgbm_pipeline.joblib
+2026-05-08 13:36:29.970 | SUCCESS  | src.models.train:train_all:363 - Best model: xgboost (AUROC=1.0000)
+2026-05-08 13:36:29.971 | SUCCESS  | src.models.train:train_all:364 - Saved best model → data/models/best_model.joblib
+2026-05-08 13:36:29.980 | SUCCESS  | __main__:run:126 - All models trained and saved to data/models/
+2026-05-08 13:36:29.980 | INFO     | __main__:run:131 -   logistic_regression       AUROC=0.9135  Recall=0.8261  Threshold=0.44
+2026-05-08 13:36:29.980 | INFO     | __main__:run:131 -   random_forest             AUROC=0.9755  Recall=0.8970  Threshold=0.58
+2026-05-08 13:36:29.980 | INFO     | __main__:run:131 -   xgboost                   AUROC=1.0000  Recall=1.0000  Threshold=0.10
+2026-05-08 13:36:29.980 | INFO     | __main__:run:131 -   lightgbm                  AUROC=1.0000  Recall=1.0000  Threshold=0.10
+2026-05-08 13:41:21.312 | INFO     | __main__:run:65 - No real data path provided — generating 8,000 synthetic isolates for development
+2026-05-08 13:41:21.313 | INFO     | src.data.load_data:generate_synthetic_whonet:115 - Generating 8,000 synthetic isolates (seed=42)
+2026-05-08 13:41:21.699 | SUCCESS  | src.data.load_data:generate_synthetic_whonet:215 - Generated 26,181 isolate-antibiotic records from 8,000 isolates
+2026-05-08 13:41:21.701 | INFO     | __main__:run:69 - Raw data shape: (26181, 17)
+2026-05-08 13:41:21.702 | INFO     | src.data.clean_data:clean:61 - Starting cleaning — input shape: (26181, 17)
+2026-05-08 13:41:21.740 | DEBUG    | src.data.clean_data:_standardise_columns:106 - Columns standardised
+2026-05-08 13:41:21.757 | DEBUG    | src.data.clean_data:_parse_dates:131 - Date range: 2019-01-01 → 2023-12-30
+2026-05-08 13:41:21.789 | INFO     | src.data.clean_data:_remove_duplicates:167 - Removed 0 duplicate records
+2026-05-08 13:41:21.827 | INFO     | src.data.clean_data:_filter_rare_combos:245 - Removed 0 records from 0 rare organism-drug combos (< 30 isolates)
+2026-05-08 13:41:21.830 | INFO     | src.data.clean_data:_filter_rare_combos:251 - Retained 15 organism-drug combinations
+2026-05-08 13:41:21.834 | INFO     | src.data.clean_data:_create_target:266 - Overall resistance rate: 44.1% (11,538 resistant / 26,181 total)
+2026-05-08 13:41:21.835 | SUCCESS  | src.data.clean_data:clean:73 - Cleaning complete — 26,181 records remain (0 removed, 0.0% drop rate)
+2026-05-08 13:41:21.944 | INFO     | __main__:run:79 - Saved cleaned data → data/processed/amr_clean.csv
+2026-05-08 13:41:23.285 | INFO     | src.data.eda:run_full_eda:291 - Starting full EDA ...
+2026-05-08 13:41:24.774 | INFO     | src.data.eda:plot_resistance_rates:92 - Saved resistance_rates.png
+2026-05-08 13:49:18.554 | INFO     | __main__:run:65 - No real data path provided — generating 8,000 synthetic isolates for development
+2026-05-08 13:49:18.554 | INFO     | src.data.load_data:generate_synthetic_whonet:115 - Generating 8,000 synthetic isolates (seed=42)
+2026-05-08 13:49:18.931 | SUCCESS  | src.data.load_data:generate_synthetic_whonet:215 - Generated 26,181 isolate-antibiotic records from 8,000 isolates
+2026-05-08 13:49:18.933 | INFO     | __main__:run:69 - Raw data shape: (26181, 17)
+2026-05-08 13:49:18.934 | INFO     | src.data.clean_data:clean:61 - Starting cleaning — input shape: (26181, 17)
+2026-05-08 13:49:18.976 | DEBUG    | src.data.clean_data:_standardise_columns:106 - Columns standardised
+2026-05-08 13:49:18.993 | DEBUG    | src.data.clean_data:_parse_dates:131 - Date range: 2019-01-01 → 2023-12-30
+2026-05-08 13:49:19.023 | INFO     | src.data.clean_data:_remove_duplicates:167 - Removed 0 duplicate records
+2026-05-08 13:49:19.061 | INFO     | src.data.clean_data:_filter_rare_combos:245 - Removed 0 records from 0 rare organism-drug combos (< 30 isolates)
+2026-05-08 13:49:19.063 | INFO     | src.data.clean_data:_filter_rare_combos:251 - Retained 15 organism-drug combinations
+2026-05-08 13:49:19.067 | INFO     | src.data.clean_data:_create_target:266 - Overall resistance rate: 44.1% (11,538 resistant / 26,181 total)
+2026-05-08 13:49:19.068 | SUCCESS  | src.data.clean_data:clean:73 - Cleaning complete — 26,181 records remain (0 removed, 0.0% drop rate)
+2026-05-08 13:49:19.179 | INFO     | __main__:run:79 - Saved cleaned data → data/processed/amr_clean.csv
+2026-05-08 13:49:20.276 | INFO     | src.data.eda:run_full_eda:291 - Starting full EDA ...
+2026-05-08 13:49:21.898 | INFO     | src.data.eda:plot_resistance_rates:92 - Saved resistance_rates.png
+2026-05-08 13:57:12.613 | INFO     | __main__:run:65 - No real data path provided — generating 8,000 synthetic isolates for development
+2026-05-08 13:57:12.613 | INFO     | src.data.load_data:generate_synthetic_whonet:115 - Generating 8,000 synthetic isolates (seed=42)
+2026-05-08 13:57:12.982 | SUCCESS  | src.data.load_data:generate_synthetic_whonet:215 - Generated 26,181 isolate-antibiotic records from 8,000 isolates
+2026-05-08 13:57:12.983 | INFO     | __main__:run:69 - Raw data shape: (26181, 17)
+2026-05-08 13:57:12.984 | INFO     | src.data.clean_data:clean:61 - Starting cleaning — input shape: (26181, 17)
+2026-05-08 13:57:13.021 | DEBUG    | src.data.clean_data:_standardise_columns:106 - Columns standardised
+2026-05-08 13:57:13.040 | DEBUG    | src.data.clean_data:_parse_dates:131 - Date range: 2019-01-01 → 2023-12-30
+2026-05-08 13:57:13.071 | INFO     | src.data.clean_data:_remove_duplicates:167 - Removed 0 duplicate records
+2026-05-08 13:57:13.105 | INFO     | src.data.clean_data:_filter_rare_combos:245 - Removed 0 records from 0 rare organism-drug combos (< 30 isolates)
+2026-05-08 13:57:13.107 | INFO     | src.data.clean_data:_filter_rare_combos:251 - Retained 15 organism-drug combinations
+2026-05-08 13:57:13.110 | INFO     | src.data.clean_data:_create_target:266 - Overall resistance rate: 44.1% (11,538 resistant / 26,181 total)
+2026-05-08 13:57:13.112 | SUCCESS  | src.data.clean_data:clean:73 - Cleaning complete — 26,181 records remain (0 removed, 0.0% drop rate)
+2026-05-08 13:57:13.230 | INFO     | __main__:run:79 - Saved cleaned data → data/processed/amr_clean.csv
+2026-05-08 13:57:14.385 | INFO     | src.data.eda:run_full_eda:291 - Starting full EDA ...
+2026-05-08 13:57:15.388 | INFO     | src.data.eda:plot_resistance_rates:92 - Saved resistance_rates.png

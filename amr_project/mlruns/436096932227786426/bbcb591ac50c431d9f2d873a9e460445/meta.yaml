@@ -1,0 +1,15 @@
+artifact_uri: /Users/brianrono/Development/Healthcare AI/Drug Resistant/amr_project/mlruns/436096932227786426/bbcb591ac50c431d9f2d873a9e460445/artifacts
+end_time: 1778235973963
+entry_point_name: ''
+experiment_id: '436096932227786426'
+lifecycle_stage: active
+run_id: bbcb591ac50c431d9f2d873a9e460445
+run_name: random_forest
+run_uuid: bbcb591ac50c431d9f2d873a9e460445
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778235970384
+status: 3
+tags: []
+user_id: brianrono

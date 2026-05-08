@@ -32,8 +32,9 @@ from sklearn.metrics import (
     roc_auc_score, roc_curve,
     average_precision_score, precision_recall_curve,
     confusion_matrix, classification_report,
-    calibration_curve, brier_score_loss,
+    brier_score_loss,
 )
+from sklearn.calibration import CalibrationDisplay
 
 import sys
 sys.path.insert(0, ".")

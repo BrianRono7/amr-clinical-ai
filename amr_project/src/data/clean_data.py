@@ -239,7 +239,7 @@ def _filter_rare_combos(df: pd.DataFrame,
     counts = df.groupby(["organism", "antibiotic"]).size()
     rare   = counts[counts < min_count].index
     mask   = df.set_index(["organism", "antibiotic"]).index.isin(rare)
-    df     = df[~mask.values]
+    df     = df[~mask]
 
     removed = before - len(df)
     logger.info(

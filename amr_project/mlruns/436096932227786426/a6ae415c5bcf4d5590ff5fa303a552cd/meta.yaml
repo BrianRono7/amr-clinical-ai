@@ -1,0 +1,15 @@
+artifact_uri: /Users/brianrono/Development/Healthcare AI/Drug Resistant/amr_project/mlruns/436096932227786426/a6ae415c5bcf4d5590ff5fa303a552cd/artifacts
+end_time: 1778235970360
+entry_point_name: ''
+experiment_id: '436096932227786426'
+lifecycle_stage: active
+run_id: a6ae415c5bcf4d5590ff5fa303a552cd
+run_name: logistic_regression
+run_uuid: a6ae415c5bcf4d5590ff5fa303a552cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778235965374
+status: 3
+tags: []
+user_id: brianrono
